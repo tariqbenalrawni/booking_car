@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import carsData from '@/data/cars.json';
 import BookingForm from './BookingForm';
 
@@ -10,20 +9,24 @@ interface Car {
   pricePerDay: number;
 }
 
-export async function generateStaticParams() {
+interface Params {
+  id: string;
+}
+
+export function generateStaticParams() {
   return carsData.cars.map((car: Car) => ({
     id: car.id,
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export function generateMetadata({ params }: { params: Params }) {
   const car = carsData.cars.find((c: Car) => c.id === params.id);
   return {
     title: car ? `حجز ${car.name}` : 'حجز سيارة',
   };
 }
 
-export default function BookCarPage({ params }: { params: { id: string } }) {
+export default function BookCarPage({ params }: { params: Params }) {
   const car = carsData.cars.find((car) => car.id === params.id);
 
   if (!car) {
@@ -41,4 +44,4 @@ export default function BookCarPage({ params }: { params: { id: string } }) {
       </div>
     </main>
   );
-} 
+}
