@@ -1,24 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# تطبيق تأجير السيارات
 
-## Getting Started
+تطبيق ويب لتأجير السيارات مبني باستخدام Next.js و Tailwind CSS.
 
-First, run the development server:
+## المميزات
 
+- عرض قائمة السيارات المتاحة
+- تفاصيل كاملة لكل سيارة
+- نظام حجز متكامل
+- حساب السعر تلقائياً
+- تخزين الحجوزات محلياً
+- واجهة مستخدم عربية سهلة الاستخدام
+
+## المتطلبات
+
+- Node.js 18.0.0 أو أحدث
+- npm 9.0.0 أو أحدث
+
+## التثبيت
+
+1. قم بنسخ المشروع:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [رابط المشروع]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. انتقل إلى مجلد المشروع:
+```bash
+cd car-rental-app
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. قم بتثبيت الاعتمادات:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. قم بتشغيل المشروع في بيئة التطوير:
+```bash
+npm run dev
+```
+
+5. افتح المتصفح على العنوان:
+```
+http://localhost:3000
+```
+
+## التقنيات المستخدمة
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- LocalStorage للبيانات
+
+## هيكل المشروع
+
+```
+car-rental-app/
+├── app/                    # صفحات التطبيق
+├── components/            # المكونات المشتركة
+├── data/                 # بيانات السيارات
+├── public/              # الملفات الثابتة
+└── styles/             # ملفات التنسيق
+```
+
+## المساهمة
+
+نرحب بمساهماتكم! يرجى اتباع الخطوات التالية:
+1. Fork المشروع
+2. إنشاء فرع جديد
+3. إرسال Pull Request
+
+## الترخيص
+
+هذا المشروع مرخص تحت رخصة MIT.
 
 ## Learn More
 

@@ -1,0 +1,96 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "name": "تويوتا كامري",
+      "model": "2022",
+      "pricePerDay": 200,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة مريحة واقتصادية، مثالية للعائلات والرحلات الطويلة.",
+      "features": [
+        "مكيف هواء",
+        "نظام صوتي",
+        "كاميرا خلفية",
+        "تحكم في السرعة"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "هوندا أكورد",
+      "model": "2023",
+      "pricePerDay": 220,
+      "image": "https://images.unsplash.com/photo-1617469767053-3c4f2a7c84ea?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة فاخرة مع تقنيات متطورة وأداء عالي.",
+      "features": [
+        "مكيف هواء",
+        "نظام صوتي",
+        "كاميرا خلفية",
+        "تحكم في السرعة"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "نيسان ألتيما",
+      "model": "2022",
+      "pricePerDay": 180,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة اقتصادية مع مساحة داخلية مريحة.",
+      "features": [
+        "مكيف هواء",
+        "نظام صوتي",
+        "كاميرا خلفية",
+        "تحكم في السرعة"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "كيا K5",
+      "model": "2023",
+      "pricePerDay": 190,
+      "image": "https://images.unsplash.com/photo-1617469767053-3c4f2a7c84ea?auto=format&fit=crop&w=800&q=60",
+      "description": "تصميم عصري وأداء مميز.",
+      "features": [
+        "مكيف هواء",
+        "نظام صوتي",
+        "كاميرا خلفية",
+        "تحكم في السرعة"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "هيونداي سوناتا",
+      "model": "2023",
+      "pricePerDay": 210,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "تصميم عصري مع تقنيات متقدمة وراحة عالية.",
+      "features": ["شاشة لمس كبيرة", "نظام ملاحة", "تثبيت السرعة", "تحكم في المناخ"]
+    },
+    {
+      "id": "6",
+      "name": "لكزس ES",
+      "model": "2023",
+      "pricePerDay": 350,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة فاخرة مع أحدث التقنيات وأعلى مستويات الراحة.",
+      "features": ["شاشة لمس كبيرة", "نظام ملاحة متطور", "تثبيت السرعة", "تحكم في المناخ", "مقاعد جلدية"]
+    },
+    {
+      "id": "7",
+      "name": "بي إم دبليو الفئة الثالثة",
+      "model": "2023",
+      "pricePerDay": 400,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة رياضية فاخرة مع أداء استثنائي وتقنيات متطورة.",
+      "features": ["شاشة لمس", "نظام ملاحة", "تثبيت السرعة", "تحكم في المناخ", "مقاعد رياضية"]
+    },
+    {
+      "id": "8",
+      "name": "مرسيدس C-Class",
+      "model": "2023",
+      "pricePerDay": 380,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=60",
+      "description": "سيارة فاخرة تجمع بين الأناقة والأداء العالي.",
+      "features": ["شاشة لمس كبيرة", "نظام ملاحة", "تثبيت السرعة", "تحكم في المناخ", "مقاعد جلدية"]
+    }
+  ]
+} 
