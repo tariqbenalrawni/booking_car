@@ -10,11 +10,7 @@ interface Car {
   pricePerDay: number;
 }
 
-interface Params {
-  id: string;
-}
-
-export default function BookCarPage({ params }: { params: Params }) {
+export default function BookCarPage({ params }: { params: { id: string } }) {
   const car = carsData.cars.find((car) => car.id === params.id);
 
   if (!car) {
@@ -28,4 +24,4 @@ export default function BookCarPage({ params }: { params: Params }) {
       </div>
     </main>
   );
-}
+} 
