@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import carsData from '@/data/cars.json';
 import BookingForm from './BookingForm';
 
@@ -13,28 +14,11 @@ interface Params {
   id: string;
 }
 
-export function generateStaticParams() {
-  return carsData.cars.map((car: Car) => ({
-    id: car.id,
-  }));
-}
-
-export function generateMetadata({ params }: { params: Params }) {
-  const car = carsData.cars.find((c: Car) => c.id === params.id);
-  return {
-    title: car ? `حجز ${car.name}` : 'حجز سيارة',
-  };
-}
-
 export default function BookCarPage({ params }: { params: Params }) {
   const car = carsData.cars.find((car) => car.id === params.id);
 
   if (!car) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-gray-600">السيارة غير موجودة</p>
-      </div>
-    );
+    notFound();
   }
 
   return (
