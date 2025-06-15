@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import carsData from '@/data/cars.json';
 import BookingForm from './BookingForm';
 
@@ -10,11 +9,13 @@ interface Car {
   pricePerDay: number;
 }
 
-export default function BookCarPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function BookCarPage({ params }: PageProps) {
   const car = carsData.cars.find((c: Car) => c.id === params.id);
 
   if (!car) {
@@ -33,13 +34,7 @@ export default function BookCarPage({
     <main className="min-h-screen bg-gray-50 py-8">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
-          <Suspense fallback={
-            <div className="text-center">
-              <p className="text-gray-600">جاري تحميل نموذج الحجز...</p>
-            </div>
-          }>
-            <BookingForm car={car} />
-          </Suspense>
+          <BookingForm car={car} />
         </div>
       </div>
     </main>
