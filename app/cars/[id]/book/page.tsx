@@ -14,11 +14,12 @@ interface Car {
   pricePerDay: number;
 }
 
-interface PageProps {
+type PageProps = {
   params: {
     id: string;
   };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 const PRICE_PER_DAY = 200;
 
